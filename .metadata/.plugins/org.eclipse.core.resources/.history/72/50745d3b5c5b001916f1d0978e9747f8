@@ -1,0 +1,11 @@
+
+public class MethodSample01 {
+
+	public static void main(String[] args) {
+		MethodSample01.greetings();
+}
+	public static void greetings() {
+		System.out.println("ƒnƒ[");
+	}
+
+}

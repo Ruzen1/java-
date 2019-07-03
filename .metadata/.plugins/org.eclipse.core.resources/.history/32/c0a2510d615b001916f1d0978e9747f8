@@ -1,0 +1,6 @@
+
+public class Neko {
+	public void say() {
+	System.out.println("ƒjƒƒƒA");
+}
+}

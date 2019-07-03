@@ -1,0 +1,12 @@
+
+public class Zoo {
+
+	public static void main(String[] args) {
+		Neko n = new Neko();
+		Dog d = new Dog();
+		Lion l = new Lion();
+		n.say();
+		d.say();
+		l.say();
+		}
+}

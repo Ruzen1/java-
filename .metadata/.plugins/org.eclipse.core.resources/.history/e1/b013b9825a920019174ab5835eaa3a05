@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method ="POST" action="#">
+	<label for=txt1>ユーザー名</label>
+	<input type=text name=user value="" id=txt1 tabindex=1><br/>
+	<label for=txt2>パスワード</label>
+	<input type=password name = pass value ="" id=txt2 tabindex=2/>
+	<br/>
+	<input type=submit value=ログイン id=txt3 tabindex=3/>
+</form>
+</body>
+</html>

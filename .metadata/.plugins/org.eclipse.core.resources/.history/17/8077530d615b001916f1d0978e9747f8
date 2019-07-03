@@ -1,0 +1,6 @@
+
+public class Lion {
+	public void say() {
+		System.out.println("ÉKÉIÅ[");
+	}
+}

@@ -1,0 +1,30 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+
+public class HTMLTable {
+public static void main(String[] args) throws IOException {
+	LocalDate today = LocalDate.now();
+	File f=new File("calendar-sample01.html");
+	FileWriter fw= new FileWriter(f);
+	fw.write("<body align="center">");
+
+	fw.write("<table border =2, border-color=blue>");
+	
+	fw.write("<tr>");
+	for(int i=1;i<=15;i++) {
+		fw.write("<td>"+
+				today.plusDays(i)+ "</td>"+"  ");
+		if (i%7==0) {
+			fw.write("</tr>"+"<tr>");
+		}
+	}
+	fw.write("</tr>");
+	fw.write("</table>");
+	fw.write("</body>");
+	fw.close();
+	
+	
+}
+}

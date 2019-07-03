@@ -1,0 +1,28 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+
+public class HTMLTable {
+public static void main(String[] args) throws IOException {
+	LocalDate today = LocalDate.now();
+	File f=new File("calendar-sample01.html");
+	FileWriter fw= new FileWriter(f);
+	fw.write("<html>");
+	fw.write("<table>");
+	
+	fw.write("<tr>");
+	for(int i=0;i<15;i++) {
+		fw.write("<td>"+
+				today.plusDays(i)+ "</td>");
+		if (i==today.getDayOfWeek().getValue()) {
+			fw.write("</tr>"+"<tr>");
+		}
+	}
+	fw.write("dfsdfd");
+	fw.write("</tr>");
+	fw.close();
+	
+	
+}
+}
